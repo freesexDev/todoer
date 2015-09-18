@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TODOer</string>
+
+    <string name="hello_world">Димка - тостер</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="priorities">
+        <item>Срочные</item>
+        <item>Напомнить</item>
+    </string-array>
+    <string name="todo_list">Список дел</string>
+    <string name="drawer_item_home">Важные</string>
+    <string name="drawer_item_free_play">Выполненные</string>
+    <string name="drawer_item_custom">Список дел</string>
+    <string name="drawer_item_settings">Настройки</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+
+    <string name="home">Задачи на сегодня</string>
+    <string name="all">Все задачи</string>
+    <string name="nope">Пока-что не готово</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

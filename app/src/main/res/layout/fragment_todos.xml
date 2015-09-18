@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCcorner_radius="2dp"
+        style="@style/CardView">
+
+        <TextView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Шо сегодня делать?"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            style="@style/Theme.AppCompat.Light" />
+
+        <TextView
+            android:layout_marginTop="26dp"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Есть бич-пакеты"
+            android:textColor="#000000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            style="@style/Theme.AppCompat.Light" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

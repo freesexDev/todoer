@@ -9,4 +9,4 @@
     android:onClick="fabClick"
     android:src="@drawable/plus"
     app:fabSize="normal"
-    app:rippleColor="?attr/colorPrimaryDark"/>
+    app:rippleColor="?attr/colorPrimaryDark" />

@@ -20,6 +20,21 @@
     <string name="all">Все задачи</string>
     <string name="nope">Пока-что не готово</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="task_names">
+        <item>9:00 - Стрижка</item>
+        <item>12:00 - сьездить в "Салют"</item>
+        <item>Купить мясо для шашлыка</item>
+        <item>Замариновать мясо для шашлыка</item>
+    </string-array>
+
+    <string-array name="task_descriptions">
+        <item>ул. Панфилова 1Б</item>
+        <item>Оставить велосипед, забрать шампуры</item>
+        <item>На рынке</item>
+        <item>С луком</item>
+    </string-array>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="add">добавить</string>
+    <string name="cancel">отмена</string>
+
 </resources>

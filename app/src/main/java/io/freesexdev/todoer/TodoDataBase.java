@@ -10,16 +10,14 @@ import android.util.Log;
 
 public class TodoDataBase extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "todo_app.db";
-    private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_TABLE = "todos";
-
     // поля таблицы
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_CATEGORY = "category";
     public static final String COLUMN_SUMMARY = "summary";
     public static final String COLUMN_DESCRIPTION = "description";
-
+    private static final String DATABASE_NAME = "todo_app.db";
+    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_TABLE = "todos";
     // запрос на создание базы данных
     private static final String DATABASE_CREATE = "create table "
             + DATABASE_TABLE + "(" + COLUMN_ID
@@ -92,8 +90,8 @@ public class TodoDataBase extends SQLiteOpenHelper {
      */
     public Cursor getAllTodos() {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.query(DATABASE_TABLE, new String[] { COLUMN_ID,
-                        COLUMN_CATEGORY, COLUMN_SUMMARY, COLUMN_DESCRIPTION }, null,
+        return db.query(DATABASE_TABLE, new String[]{COLUMN_ID,
+                        COLUMN_CATEGORY, COLUMN_SUMMARY, COLUMN_DESCRIPTION}, null,
                 null, null, null, null);
     }
 
@@ -103,8 +101,8 @@ public class TodoDataBase extends SQLiteOpenHelper {
     public Cursor getTodo(long rowId) throws SQLException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor mCursor = db.query(true, DATABASE_TABLE,
-                new String[] { COLUMN_ID, COLUMN_CATEGORY, COLUMN_SUMMARY,
-                        COLUMN_DESCRIPTION }, COLUMN_ID + "=" + rowId, null,
+                new String[]{COLUMN_ID, COLUMN_CATEGORY, COLUMN_SUMMARY,
+                        COLUMN_DESCRIPTION}, COLUMN_ID + "=" + rowId, null,
                 null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();

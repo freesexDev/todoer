@@ -3,6 +3,8 @@ package io.freesexdev.todoer;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.ListFragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -65,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
     public void changeFragment(Fragment fragment, FragmentManager fragmentManager) {
 
         fragmentManager.popBackStack();
@@ -90,10 +97,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fabClick(View v) {
+        Intent i = new Intent(this, AddActivity.class);
+        startActivity(i);
+    }
 
-        Snackbar
-                .make(coordinatorLayout, R.string.nope, Snackbar.LENGTH_SHORT)
-                .show();
+    public void changeListFragment(ListFragment fragment, FragmentManager fragmentManager) {
+
+        fragmentManager.popBackStack();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+        fragmentTransaction.replace(rootLayout, fragment);
+        fragmentTransaction.commit();
 
     }
+
+
 }

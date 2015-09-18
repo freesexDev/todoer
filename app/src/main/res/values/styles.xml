@@ -1,12 +1,40 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Colors -->
+    <color name="shadow_endColor">#d3d3d3</color>
+    <color name="shadow_startColor">#00ffffff</color>
+    <color name="color_window_background">#ffffff</color>
+    <color name="colorPrimary">#43a047</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="colorAccent">#00c853</color>
+
+    <!-- Themes -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#43a047</item>
-        <item name="colorPrimaryDark">#2e7d32</item>
-        <item name="colorAccent">#00c853</item>
-        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/color_window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.ListView">
+        <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="listPreferredItemHeight">64dp</item>
+        <item name="listPreferredItemHeightSmall">48dp</item>
+        <item name="listPreferredItemHeightLarge">80dp</item>
+        <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material
+        </item>
+        <item name="listPreferredItemPaddingRight">
+            @dimen/abc_list_item_padding_horizontal_material
+        </item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 </resources>

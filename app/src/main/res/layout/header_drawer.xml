@@ -5,9 +5,9 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="288px"
-        android:id="@+id/imageView"
         android:background="@drawable/header_wallpaper" />
 
 </LinearLayout>

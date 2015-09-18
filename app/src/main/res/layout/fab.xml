@@ -6,4 +6,4 @@
     android:onClick="fabClick"
     android:src="@drawable/ic_plus_white_24dp"
     app:fabSize="normal"
-    app:rippleColor="?attr/colorPrimaryDark"/>
+    app:rippleColor="?attr/colorPrimaryDark" />

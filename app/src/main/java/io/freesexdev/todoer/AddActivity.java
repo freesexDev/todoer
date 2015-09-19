@@ -2,10 +2,8 @@ package io.freesexdev.todoer;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
@@ -35,10 +33,13 @@ public class AddActivity extends AppCompatActivity {
         na = name.getText().toString();
         de = description.getText().toString();
 
+
         editor.putString("name", na);
         editor.putString("description", de);
         editor.apply();
         editor.commit();
+
+        finish();
     }
 
     public void cancelRemind(View v) {

@@ -20,6 +20,15 @@
             app:title="@string/app_name" />
     </android.support.design.widget.AppBarLayout>
 
+    <TextView
+        android:id="@+id/text_empt"
+        android:text="@string/data_empty"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/coordinator"
         android:layout_width="match_parent"

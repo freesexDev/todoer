@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center|left">
+    android:minHeight="50dp"
+    android:orientation="horizontal">
 
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:paddingLeft="16dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:textColor="@color/abc_primary_text_material_light" />
+        android:textColor="@color/abc_primary_text_material_light"
+        android:layout_gravity="center|left"/>
 
-</LinearLayout>
+    <ImageButton
+        android:paddingRight="16dp"
+        android:onClick="deleteTask"
+        android:src="@drawable/ic_chevron_right_black_36dp"
+        android:background="@drawable/bar_background"
+        android:layout_gravity="right|center"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</FrameLayout>

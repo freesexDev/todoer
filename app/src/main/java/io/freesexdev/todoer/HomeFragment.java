@@ -12,15 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.SimpleCursorAdapter;
 
-/*TODO: check this method:
-public void reload() {
-    Intent intent = getIntent();
-    overridePendingTransition(0, 0);
-    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-    finish();
-    overridePendingTransition(0, 0);
-    startActivity(intent);}*/
-
 public class HomeFragment extends ListFragment {
 
     public TaskDBHelper helper;
@@ -45,9 +36,10 @@ public class HomeFragment extends ListFragment {
         cursor.moveToFirst();
         while (cursor.moveToNext()) {
             Log.d("HomeFragment cursor",
-                    cursor.getString(
-                            cursor.getColumnIndexOrThrow(
-                                    TaskContract.Columns.TASK)));
+                    "added" +
+                            cursor.getString(
+                                    cursor.getColumnIndexOrThrow(
+                                            TaskContract.Columns.TASK)));
         }
 
 
@@ -68,13 +60,14 @@ public class HomeFragment extends ListFragment {
 
     }
 
-    class UpdateUi {
+    public class UpdateUi {
         public UpdateUi() {
             helper = new TaskDBHelper(getActivity());
             SQLiteDatabase sqlDB = helper.getReadableDatabase();
             Cursor cursor = sqlDB.query(TaskContract.TABLE,
                     new String[]{TaskContract.Columns._ID, TaskContract.Columns.TASK},
                     null, null, null, null, null);
+
 
             ListAdapter listAdapter = new SimpleCursorAdapter(
                     getActivity(),
@@ -85,7 +78,11 @@ public class HomeFragment extends ListFragment {
                     0
             );
             setListAdapter(listAdapter);
+
+
         }
 
     }
+
+
 }

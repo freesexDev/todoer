@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TODOer</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="about">Про програму</string>
+    <string name="add">додати</string>
+    <string name="add_desc">Напишiть нагадування тут</string>
+    <string name="add_task">Додати нагадування</string>
+    <string name="added">Нагадування додано</string>
+    <string name="all">Вiдкладенi нагадування</string>
+    <string name="cancel">вiдмiна</string>
+    <string name="data_empty"></string>
+    <string name="delete_all">Видалити усi нагадування</string>
+    <string name="delete_description">Усi нагадання будуть видаленi</string>
+    <string name="deleted">Нагадування видаленi</string>
+    <string name="developer">Розробник: Максим FreesexDev Андрющенко</string>
+    <string name="home">Нагадування</string>
+    <string name="nope">Поки що не готово</string>
+    <string name="source">Вихiдний код: https://github.com/freesexdev/todoer</string>
+    <string name="tester">Тестер: Богдан Черепов</string>
+    <string name="hello_world">Дiмка - тостер</string>
+</resources>

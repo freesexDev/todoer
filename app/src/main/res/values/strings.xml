@@ -2,15 +2,25 @@
     <string name="app_name">TODOer</string>
 
     <string name="hello_world">Димка - тостер</string>
-    <string name="action_settings">Settings</string>
-    <string name="home">Задачи на сегодня</string>
-    <string name="all">Все задачи</string>
-    <string name="nope">Пока-что не готово</string>
+    <string name="action_settings">Настройки</string>
+    <string name="home">Задачи</string>
+    <string name="all">Отложенные задачи</string>
+    <string name="nope">Пока что не готово</string>
+    <string name="delete_all">Удалить все напоминания</string>
+    <string name="deleted">Все напоминания удалены</string>
+    <string name="delete_description">Все напоминания будут удалены</string>
 
     <string name="add_task">Добавть напоминание</string>
     <string name="add_desc">Напишите напоминание здесь</string>
     <string name="add">добавить</string>
     <string name="cancel">отмена</string>
     <string name="added">Напоминание добавлено</string>
+    <string name="data_empty">Напоминаний нету, пожалуйста, добавьте напоминание</string>
+
+    <string name="about">О программе</string>
+    <string name="developer">Разработчик: Макс FreesexDev Андрющенко</string>
+    <string name="tester">Тестер: Богдан Черепов</string>
+    <string name="source">Исходный код на GitHub: https://github.com/freesexdev/todoer</string>
+
 
 </resources>

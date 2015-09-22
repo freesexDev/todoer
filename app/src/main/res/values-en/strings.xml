@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TODOer</string>
+
+    <string name="hello_world">Димка - тостер</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Tasks</string>
+    <string name="all">Deferred tasks </string>
+    <string name="nope">Not yet ready</string>
+    <string name="delete_all">Delete all tasks</string>
+    <string name="deleted">Tasks has been deleted</string>
+    <string name="delete_description"></string>
+
+    <string name="add_task">Add task</string>
+    <string name="add_desc">Write task message here</string>
+    <string name="add">add</string>
+    <string name="cancel">cancel</string>
+    <string name="added">Task has been added</string>
+    <string name="data_empty">Напоминаний нету, пожалуйста, добавьте напоминание</string>
+
+    <string name="about">About</string>
+    <string name="developer">Developer: Max FreesexDev Andryuschenko</string>
+    <string name="tester">Tester: Bogdan Cherepov</string>
+    <string name="source">Source code on GitHub: https://github.com/freesexdev/todoer</string>
+</resources>

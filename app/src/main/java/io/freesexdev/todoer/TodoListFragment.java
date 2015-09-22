@@ -1,6 +1,6 @@
 package io.freesexdev.todoer;
 
-import android.app.Fragment;
+import android.app.ListFragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class TodoListFragment extends Fragment {
+public class TodoListFragment extends ListFragment {
 
     private LayoutInflater inflater;
 

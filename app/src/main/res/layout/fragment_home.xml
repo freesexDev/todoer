@@ -5,6 +5,10 @@
     android:orientation="vertical">
 
     <ListView
+        android:scrollbarSize="0dp"
+        android:scrollbarStyle="outsideInset"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

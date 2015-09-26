@@ -1,16 +1,21 @@
-package io.freesexdev.todoer;
+package io.freesexdev.todoer.fragment;
 
-import android.app.ListFragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.SimpleCursorAdapter;
+
+import io.freesexdev.todoer.R;
+import io.freesexdev.todoer.database.TaskContract;
+import io.freesexdev.todoer.database.TaskDBHelper;
 
 /*TODO: check this method:
 public void reload() {
@@ -23,13 +28,20 @@ public void reload() {
 
 public class HomeFragment extends ListFragment {
 
+    private ImageButton deleteButton;
     public TaskDBHelper helper;
     private int layout = R.layout.fragment_home;
     private int listItemLayout = R.layout.list_item;
     private LayoutInflater inflater;
 
 
-    public HomeFragment() {
+    public static HomeFragment getInstance() {
+        Bundle args = new Bundle();
+
+        HomeFragment fragment = new HomeFragment();
+        fragment.setArguments(args);
+
+        return fragment;
     }
 
     @Nullable

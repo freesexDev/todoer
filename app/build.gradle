@@ -23,13 +23,17 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            signingConfig signingConfigs.test
+        }
     }
 }
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.0.1'
     compile 'com.android.support:design:23.0.1'
     compile 'com.android.support:cardview-v7:23.0.1'
-    compile 'com.mikepenz.materialdrawer:library:2.9.8'
+    compile 'com.mikepenz:materialdrawer:4.3.0'
     compile files('libs/svg-android-1.1.jar')
 }

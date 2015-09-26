@@ -10,6 +10,8 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import io.freesexdev.todoer.database.TaskDBHelper;
+
 public class SettingsActivity extends AppCompatActivity {
 
     public TaskDBHelper helper;

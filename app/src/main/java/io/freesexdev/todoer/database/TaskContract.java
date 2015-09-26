@@ -1,4 +1,4 @@
-package io.freesexdev.todoer;
+package io.freesexdev.todoer.database;
 
 import android.provider.BaseColumns;
 

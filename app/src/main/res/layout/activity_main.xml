@@ -6,34 +6,22 @@
     tools:context=".MainActivity">
 
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            app:title="@string/app_name" />
+            app:title="@string/app_name"
+            app:navigationIcon="@drawable/ic_menu_white_24dp"
+            app:titleTextColor="@android:color/white" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <TextView
-        android:id="@+id/text_empt"
-        android:text="@string/data_empty"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
 
     <android.support.design.widget.CoordinatorLayout
+        android:layout_below="@+id/appbar"
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_height="match_parent">
 
         <include
             android:id="@+id/fab"
@@ -45,6 +33,7 @@
 
 
         <LinearLayout
+            android:layout_marginTop="?attr/actionBarSize"
             android:id="@+id/layout_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

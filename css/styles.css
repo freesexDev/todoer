@@ -1,0 +1,37 @@
+h1 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+h2 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+h3 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+h4 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+h5 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+h6 {
+    margin: 16px;
+    padding-left: 16px;
+}
+
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.normal-font {
+    font-family: Calibri;
+}

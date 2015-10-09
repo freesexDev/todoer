@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.internal.view.ContextThemeWrapper;
@@ -16,24 +15,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.SimpleCursorAdapter;
+
+import com.melnykov.fab.FloatingActionButton;
+import com.yandex.metrica.YandexMetrica;
 
 import io.freesexdev.todoer.R;
 import io.freesexdev.todoer.database.TaskContract;
 import io.freesexdev.todoer.database.TaskDBHelper;
 
-/*TODO: check this method:
-*/
-
 public class HomeFragment extends ListFragment {
 
+    String API_KEY = "ecac9d66-1f28-47da-a8e5-6b04d89da791";
     private FloatingActionButton fab;
-    private ImageButton deleteButton;
     public TaskDBHelper helper;
-    private int layout = R.layout.fragment_home;
-    private int listItemLayout = R.layout.list_item;
+    private int LAYOUT = R.layout.fragment_home;
+    private int LIST_ITEM_LAYOUT = R.layout.list_item;
 
     public static HomeFragment getInstance() {
         Bundle args = new Bundle();
@@ -47,7 +45,9 @@ public class HomeFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         UpdateUi();
         initDb();
-        View view = inflater.inflate(layout, container, false);
+        YandexMetrica.activate(getActivity(), API_KEY);
+        YandexMetrica.reportEvent("OnCreateView HomeFragment");
+        View view = inflater.inflate(LAYOUT, container, false);
         fab = (FloatingActionButton) view.findViewById(R.id.floatbutton);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,7 +106,7 @@ public class HomeFragment extends ListFragment {
                 null, null, null, null, null);
         ListAdapter listAdapter = new SimpleCursorAdapter(
                 getActivity(),
-                listItemLayout,
+                LIST_ITEM_LAYOUT,
                 cursor,
                 new String[]{TaskContract.Columns.TASK},
                 new int[]{R.id.label},

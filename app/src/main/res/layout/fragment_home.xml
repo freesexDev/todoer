@@ -5,26 +5,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ListView
-        android:id="@android:id/list"
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="-16dp"
-        android:scrollbarSize="0dp"
-        android:scrollbarStyle="outsideInset" />
+        android:layout_height="match_parent">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_plus_white_24dp"
-        app:fabSize="normal"
-        app:rippleColor="?attr/colorPrimaryDark"
-        android:layout_gravity="right|bottom"
-        android:layout_margin="16dp" />
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="-16dp"
+            android:scrollbarSize="0dp"
+            android:scrollbarStyle="outsideInset" />
 
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/floatbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_plus_white_24dp"
+            app:fabColorNormal="@color/colorAccent" />
+    </android.support.design.widget.CoordinatorLayout>
 
 </FrameLayout>

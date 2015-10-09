@@ -16,8 +16,7 @@ public class TabAdapter extends FragmentPagerAdapter {
         super(fm);
         tabs = new String[]{
                 "Задачи",
-                "Дни рождения",
-                "Будильники"
+                "Не готово"
         };
 
     }

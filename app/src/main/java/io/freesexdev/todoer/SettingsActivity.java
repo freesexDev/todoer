@@ -19,13 +19,11 @@ public class SettingsActivity extends AppCompatActivity {
     private CardView c;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-
         toolbar = (Toolbar) findViewById(R.id.settings_toolbar);
         c = (CardView) findViewById(R.id.settings_cardView);
-
         setSupportActionBar(toolbar);
         c.setOnClickListener(new View.OnClickListener() {
             @Override

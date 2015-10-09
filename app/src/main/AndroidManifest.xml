@@ -20,4 +20,6 @@
             android:name=".SettingsActivity"/>
     </application>
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 </manifest>

@@ -18,20 +18,6 @@
         <item name="android:windowBackground">@color/color_window_background</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
-<!--        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>-->
-    </style>
-
-    <style name="AppTheme.ListView">
-        <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
-        <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
-        <item name="listPreferredItemHeight">64dp</item>
-        <item name="listPreferredItemHeightSmall">48dp</item>
-        <item name="listPreferredItemHeightLarge">80dp</item>
-        <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material
-        </item>
-        <item name="listPreferredItemPaddingRight">
-            @dimen/abc_list_item_padding_horizontal_material
-        </item>
     </style>
 
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
@@ -39,6 +25,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/color_window_background</item>
+    </style>
+
+    <style name="TextAppearance_tabs" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textSize">11sp</item>
     </style>
 
 </resources>

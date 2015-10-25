@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:maxHeight="500dp"
+    android:id="@+id/birthday_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top">
+
+                <EditText
+                    android:id="@+id/textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Имя" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <DatePicker
+                android:id="@+id/dPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:startYear="1945"
+                android:endYear="2015" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

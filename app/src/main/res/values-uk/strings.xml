@@ -9,7 +9,7 @@
     <string name="added">Нагадування додано</string>
     <string name="all">Вiдкладенi нагадування</string>
     <string name="cancel">вiдмiна</string>
-    <string name="data_empty"></string>
+    <string name="data_empty">Додайте нагадування, натиснувши на "+"</string>
     <string name="delete_all">Видалити усi нагадування</string>
     <string name="delete_description">Усi нагадання будуть видаленi</string>
     <string name="deleted">Нагадування видаленi</string>

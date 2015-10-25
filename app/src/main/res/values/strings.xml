@@ -3,7 +3,7 @@
 
     <string name="hello_world">Димка - тостер</string>
     <string name="action_settings">Настройки</string>
-    <string name="home">Задачи на сегодня</string>
+    <string name="home">Задачи</string>
     <string name="all">Все задачи</string>
     <string name="nope">Пока-что не готово</string>
     <string name="delete_all">Удалить все напоминания</string>
@@ -15,12 +15,14 @@
     <string name="add">добавить</string>
     <string name="cancel">отмена</string>
     <string name="added">Напоминание добавлено</string>
-    <string name="data_empty">Напоминаний нету, пожалуйста, добавьте напоминание</string>
+    <string name="data_empty">Добавьте напоминание, нажав на "+"</string>
 
     <string name="about">О программе</string>
     <string name="developer">Разработчик: Макс FreesexDev Андрющенко</string>
     <string name="tester">Тестер: Богдан Черепов</string>
     <string name="source">Исходный код на GitHub: https://github.com/freesexdev/todoer</string>
+    <string name="firstVisited">Добавьте свою первую задачу, нажав на "+"</string>
+    <string name="emptyString">Напишите задачу перед те, как добавить её!</string>
 
 
 </resources>

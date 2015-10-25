@@ -29,4 +29,5 @@ dependencies {
     compile files('libs/svg-android-1.1.jar')
     compile 'com.yandex.android:mobmetricalib:2.00'
     compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
 }
